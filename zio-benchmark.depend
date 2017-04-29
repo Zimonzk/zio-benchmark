@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1493504440 source:f:\users\simon\git\zio-benchmark\main.c
+	<stdio.h>
+	<stdlib.h>
+	"zim_con.h"
+	"reader.h"
+
+1491661582 f:\users\simon\git\zio-benchmark\zim_con.h
+
+1493495465 f:\users\simon\git\zio-benchmark\reader.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"kontur/zim_con.h"
+
