@@ -1,2 +1,2 @@
 # zio-benchmark
-A Code::Blocks project where I testi zoi-routines
+A Code::Blocks project where I testi zio-routines
