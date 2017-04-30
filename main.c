@@ -6,12 +6,13 @@
 
 #include <windows.h>
 
-#include "zim_con.h"
-#include "reader.h"
+#include "zio-con.h"
+#include "zio-list.h"
+#include "zio-reader.h"
 
 
-#define NUM 100000000
-#define CHU 10000000
+#define NUM 1000000
+#define CHU 1000000
 
 void handle_signal(int);
 
@@ -68,6 +69,18 @@ int main()
 
     mlog("Elapsed seconds: %f",
          ((float) (end_100nanos - start_100nanos))/10000000);
+
+    intlist_free(&ints);
+
+    {
+        alist ali;
+        alist_create_type(ali, long, 1000);
+
+        alist_append_type(ali, long, 34);
+
+        mlog("Erster Wert in ali: %i, laenge von ali: %i, max. laenge von ali: %i", *((long*) ali.start_ptr), ali.length, ali.allocated_length);
+        mlog("Blockgroesze von ali: %i, Einheitsgroesze von ali: %i", ali.block_units, ali.usize);
+    }
 
     return 0;
 }

@@ -1,9 +1,13 @@
 # depslib dependency file v1.0
-1493504440 source:f:\users\simon\git\zio-benchmark\main.c
+1493580791 source:f:\users\simon\git\zio-benchmark\main.c
 	<stdio.h>
 	<stdlib.h>
-	"zim_con.h"
-	"reader.h"
+	<math.h>
+	<signal.h>
+	<windows.h>
+	"zio-con.h"
+	"zio-list.h"
+	"zio-reader.h"
 
 1491661582 f:\users\simon\git\zio-benchmark\zim_con.h
 
@@ -12,4 +16,23 @@
 	<stdlib.h>
 	<string.h>
 	"kontur/zim_con.h"
+
+1493559123 f:\users\simon\git\zio-benchmark\zio-con.h
+	<stdio.h>
+	<string.h>
+	<stdarg.h>
+	<stdlib.h>
+	<windows.h>
+
+1493580816 f:\users\simon\git\zio-benchmark\zio-list.h
+	<stdlib.h>
+	<string.h>
+	"zio-con.h"
+
+1493558980 f:\users\simon\git\zio-benchmark\zio-reader.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"zio-con.h"
+	"zio-list.h"
 

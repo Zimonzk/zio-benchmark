@@ -38,8 +38,9 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="reader.h" />
-		<Unit filename="zim_con.h" />
+		<Unit filename="zio-con.h" />
+		<Unit filename="zio-list.h" />
+		<Unit filename="zio-reader.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

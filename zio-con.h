@@ -1,10 +1,12 @@
-/*
- * This the header for libzimcon, a basic logging utility
- * Version v0.2
- */
+#ifndef __zio_con__
+#define __zio_con__
 
-#ifndef __zim_con__
-#define __zim_con__
+#include <stdio.h>
+#include <string.h>
+#include <stdarg.h>
+#include <stdlib.h>
+
+#include <windows.h>
 
 #ifndef _NOMAIN_
 extern short int debug = 1;
@@ -15,4 +17,4 @@ extern void mwarn(char *, ...);
 extern void merror(char *, ...);
 extern void mdebug(char *, ...);
 
-#endif // __zim_con__
+#endif // __zio_con__
